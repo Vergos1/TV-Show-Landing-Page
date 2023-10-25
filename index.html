@@ -5,21 +5,122 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@400;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <!--  mulish font family 400 600 700 800 900 fw  / marcellus 400 fw-->
     <link rel="stylesheet" href="./src/style/index.css">
     <!-- css -->
     <title>TV Show Landing Page</title>
 </head>
 <body>
-<header id="header">
+
+<header id="header" class="header">
     <div class="header__container container">
         <div class="header__wrapper">
-            <a href="#">
+            <a href="#" class="header__logo">
                 <img src="./src/assets/icon/main-logo.svg" alt="main logo">
             </a>
-
+            <div class="mobile">
+                <button type="button">
+                    <img src="./src/assets/icon/burger-close.svg" alt="menu open">
+                </button>
+                <div class="header__burger-menu nav-bar-mobile">
+                    <a href="#">
+                        Home
+                    </a>
+                    <a href="#">
+                        TV Shows
+                    </a>
+                    <a href="#">
+                        Movies
+                    </a>
+                    <a href="#">
+                        Series
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </header>
+<!--header -->
+
+<section id="hero" class="hero">
+    <div class="hero__container container">
+        <div class="hero__wrapper">
+            <h1 class="hero__title">
+                Zack Snyder's Justice League
+            </h1>
+            <div class="hero__features">
+                <div class="hero__features-left">
+                    <span class="hero__item-date">2021</span>
+                    <span class="hero__item-age">
+                    18+
+                    </span>
+                    <span class="hero__item-time">
+                        4h 2min
+                    </span>
+                </div>
+
+                <span class="hero__item-rating">
+                    8.8
+                    <img src="./src/assets/icon/star.svg" alt="star">
+                </span>
+            </div>
+            <p class="hero__description">
+                Determined to ensure Superman's ultimate
+                sacrifice was not in vain, Bruce Wayne aligns
+                forces with Diana
+                Prince with plans to recruit a team of
+                metahumans to protect the world from an approaching threat of
+                catastrophic proportions.
+            </p>
+            <div class="hero__bottom">
+                <button class="hero__watch-button button-blue">
+                    <img src="./src/assets/icon/play.svg" alt="play">
+                    Watch
+                </button>
+                <a href="#" class="button-white">
+                    More information
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--hero section -->
+
+<section id="trending">
+    <div class="trending__container container">
+        <div class="tranding__wrapper">
+            <h3 class="trending__title">
+                Trending TV Shows
+            </h3>
+            <div class="trending__items">
+                <div class="trending__item">
+                    <a href="#" class="trending__item-link">
+                        <img src="./src/assets/picture/tranding1.jpg" alt="after shows">
+                    </a>
+                    <a href="#" class="trending__item-link">
+                        <img src="./src/assets/picture/tranding2.jpg" alt="emanplication shows">
+                    </a>
+                    <a href="#" class="trending__item-link">
+                        <img src="./src/assets/picture/tranding3.jpg" alt="dunkirk shows">
+                    </a>
+                    <a href="#" class="trending__item-link">
+                        <img src="./src/assets/picture/tranding4.jpg" alt="the enormity of life shows">
+                    </a>
+                    <a href="#" class="trending__item-link">
+                        <img src="./src/assets/picture/tranding5.jpg" alt="vanitas shows">
+                    </a>
+                    <a href="#" class="trending__item-link">
+                        <img src="./src/assets/picture/tranding6.jpg" alt="something like perfect shows">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!--script main -->
 <script src="./src/script/index.js"></script>

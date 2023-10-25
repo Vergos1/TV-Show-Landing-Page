@@ -2,4 +2,30 @@
   &__container {
     padding: 15px 0;
   }
+
+  &__wrapper {
+    @include flex-all-sb;
+  }
+
+  &__logo > * {
+    width: 50%;
+    height: 50%;
+  }
+
+  &__burger-menu {
+    display: none;
+
+    &.open {
+      display: block;
+    }
+  }
+}
+
+@include tablet {
+  .header {
+    &__logo > * {
+      width: 157px;
+      height: 70px;
+    }
+  }
 }

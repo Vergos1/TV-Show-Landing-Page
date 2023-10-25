@@ -205,15 +205,10 @@ html {
   &::-webkit-scrollbar {
     width: 5px;
     height: 10px;
-
-    @include tablet-sm {
-      width: 3px;
-      height: 10px;
-    }
   }
 
   &::-webkit-scrollbar-track {
-    background-color: var(--app-main);
+    background-color: $main-bg;
   }
 
   &::-webkit-scrollbar-thumb {
@@ -224,19 +219,20 @@ html {
 *,
 *::before,
 *::after {
-  font-family: var(--roboto);
+  font-family: $mulish;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  transition: all 0.25s ease-in-out;
 }
 body {
   min-width: 320px;
 }
 body,
 html {
-  background-color: var(--main-bg);
-  color: var(--text-default);
-  font-size: var(--f-16);
+  background-color: $main-bg;
+  color: $text-default;
+  font-size: 16px;
   line-height: 100%;
   margin: 0;
   padding: 0;
@@ -270,7 +266,7 @@ body {
 }
 
 p {
-  font-family: var(--nunito);
+  font-family: $mulish;
 }
 
 a {
@@ -286,7 +282,8 @@ div {
 
 section {
   @include large-pc {
-    min-height: max-content;
+    max-width: 1920px;
+    margin: auto;
   }
 
   overflow: hidden;
@@ -308,9 +305,7 @@ textarea {
   width: 100%;
   max-height: 200px;
   resize: none;
-  color: var(--text-default);
-  border: 1px solid var(--border-main);
-  border-radius: var(--br-7);
+  color: $text-default;
   outline: none;
   overflow: auto;
 
@@ -342,6 +337,7 @@ textarea {
 button {
   padding: 0;
   margin: 0;
+  display: flex;
 }
 
 li {

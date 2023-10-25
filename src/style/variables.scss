@@ -1,21 +1,22 @@
-:root {
-  //note BACKGROUND
-  --main-bg: #000;
-  --main-footer-header: #727272;
+//note BACKGROUND
+$main-bg: #000;
+$white-bg: #fff;
 
-  //note TEXT
-  --text-default: #ffffff;
-  --text-hover: #F90;
-  --text-active: #F90;
-  --text-selected: #F7931A;
 
-  //note BORDER
-  --border-hover: #F90;
-  --border-active: #F90;
+//note TEXT
+$text-default: #ffff;
+$text-secondary: #323232;
+$text-none-active: #808080;
+$text-grey: #C2C2C2;
 
-  //note FONT-FAMILY
-  --roboto: 'Roboto', sans-serif;
+//note GRADIENT
+$gradient1: linear-gradient(317deg, #26FFF2 13.2%, #326CFF 71.54%);
 
-  //note BOX-SHADOW
-  $box-shadow1: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
+//note BORDER
+$border-section: #2F2E2E;
+
+//note FONT-FAMILY
+$mulish: 'Mulish', sans-serif;
+$marcellus: 'Marcellus', serif;
+//note BOX-SHADOW
+$box-shadow1: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
