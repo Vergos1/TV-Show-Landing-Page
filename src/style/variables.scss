@@ -1,0 +1,21 @@
+:root {
+  //note BACKGROUND
+  --main-bg: #000;
+  --main-footer-header: #727272;
+
+  //note TEXT
+  --text-default: #ffffff;
+  --text-hover: #F90;
+  --text-active: #F90;
+  --text-selected: #F7931A;
+
+  //note BORDER
+  --border-hover: #F90;
+  --border-active: #F90;
+
+  //note FONT-FAMILY
+  --roboto: 'Roboto', sans-serif;
+
+  //note BOX-SHADOW
+  $box-shadow1: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
