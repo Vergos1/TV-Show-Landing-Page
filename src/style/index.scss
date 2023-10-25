@@ -1,0 +1,31 @@
+@import "./variables";
+@import "./mixins";
+@import "./animation";
+@import "./normalize";
+//note IMPORTS
+
+//note STYLE MAIN
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 100px 0;
+
+  @include desktop {
+    max-width: 932px;
+  }
+
+  @include tablet {
+    max-width: 728px;
+  }
+
+  @include tablet-sm {
+    max-width: calc(100% - 40px);
+  }
+}
+
+//note STYLE MAIN
+
+//note COMPONENTS
+@import "./components/header";
+//note COMPONENTS
