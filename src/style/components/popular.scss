@@ -64,7 +64,6 @@
   &__item {
     @include flex-all-center;
     flex-direction: column;
-    flex: 1 1;
     gap: 20px;
     &>* {
       &:hover,
@@ -87,6 +86,14 @@
     }
   }
 }
+@include tablet {
+  .popular {
+    &__item {
+      flex: 1 1;
+      width: max-content;
+    }
+  }
+}
 
 @include desktop {
   .popular {
@@ -95,7 +102,6 @@
       grid-template-columns: repeat(4, 1fr);
       gap: 27px;
     }
-
     &__card {
       padding: 45px;
     }

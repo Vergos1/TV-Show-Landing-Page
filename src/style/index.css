@@ -646,9 +646,14 @@ h4 {
     all: revert; /* Отмена всех стилей Swiper */
   }
 }
+.swiper-slide > * {
+  margin: auto;
+}
+
 .header {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   background: #000;
   z-index: 9999;
@@ -824,9 +829,6 @@ h4 {
   display: flex;
   justify-content: center;
 }
-.trending__item {
-  flex: 1 1;
-}
 .trending__item:hover img {
   box-shadow: 0px 0px 10px 5px #0A2A3B;
 }
@@ -834,6 +836,11 @@ h4 {
 @media (min-width: 601px) {
   .trending__link {
     max-width: max-content;
+  }
+}
+@media (min-width: 741px) {
+  .trending__item {
+    flex: 1 1;
   }
 }
 .popular__wrapper:not(:last-child) {
@@ -893,7 +900,6 @@ h4 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  flex: 1 1;
   gap: 20px;
 }
 .popular__item > *:hover, .popular__item > *:active, .popular__item > *:focus {
@@ -907,6 +913,12 @@ h4 {
 @media (min-width: 451px) {
   .popular__items {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 741px) {
+  .popular__item {
+    flex: 1 1;
+    width: max-content;
   }
 }
 @media (min-width: 992px) {
