@@ -1,11 +1,14 @@
 // rollup.config.mjs
-import { terser } from 'rollup-plugin-terser';
+import {terser} from 'rollup-plugin-terser'
+
+
 
 export default {
-  input: 'index.js', // Ваш основной модуль
+  input: 'index.js',
+  "type": "module",
   output: {
-    file: 'bundle.min.js', // Имя минимизированного файла
-    format: 'esm', // Формат модуля (ES6 модуль)
+    file: 'bundle.min.js',
+    format: 'esm',
   },
-  plugins: [terser()], // Минимизация с использованием Terser
+  plugins: [terser()],
 };
