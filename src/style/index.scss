@@ -5,11 +5,34 @@
 //note IMPORTS
 
 //note STYLE MAIN
+h1 {
+  font-family: $marcellus;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 70px;
+  @include tablet-sm {
+    font-size: 80px;
+  }
+}
+
+h3 {
+  color: $text-default;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  @include tablet-sm {
+    color: $text-default;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+}
 
 .container {
+  max-height: max-content;
   margin: 0 auto;
   width: 100%;
-  padding: 100px 0;
+  padding: 70px 0;
 
   // Base styles for mobile devices
   max-width: calc(100% - 40px);
@@ -19,11 +42,11 @@
   }
 
   @include tablet {
-    max-width: 90%;  // For tablets starting from 741px
+    max-width: 90%; // For tablets starting from 741px
   }
 
   @include desktop {
-    max-width: 85%;  // For desktops starting from 992px
+    max-width: 85%; // For desktops starting from 992px
   }
 }
 
@@ -31,6 +54,13 @@
   display: block;
   @include desktop {
     display: none;
+  }
+}
+
+.desktop {
+  display: none;
+  @include desktop {
+    display: block;
   }
 }
 
@@ -49,7 +79,7 @@
       position: absolute;
       width: 100%;
       height: 2px;
-      bottom: 0;
+      bottom: -5px;
       left: 0;
       background: $gradient1;
       transform: scaleX(0);
@@ -70,7 +100,14 @@
 }
 
 .nav-bar {
-  @include flex-v-center;
+  display: none;
+  @include desktop {
+    @include flex-v-center;
+  }
+
+  & > * {
+    @include mr(54px);
+  }
 }
 
 .nav-bar-mobile {
@@ -104,11 +141,45 @@
   @include border-radius(50px);
 }
 
+.section-title {
+  margin-bottom: 45px;
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    @include border-radius(50px);
+    width: 8px;
+    height: 35px;
+    bottom: -6px;
+    left: -20px;
+    background: $gradient1;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+}
+
+//lib: swiper style
+@media (min-width: 741px) {
+  .swiper-container,
+  .swiper-slide,
+  .swiper-button-next,
+  .swiper-button-prev,
+  .swiper-pagination-bullet,
+  .swiper-scrollbar {
+    all: revert; /* Отмена всех стилей Swiper */
+  }
+}
+
 //note STYLE MAIN
 
 //note COMPONENTS
 
 @import "./components/header";
 @import "./components/hero";
+@import "./components/trending";
+@import "./components/popular";
 
 //note COMPONENTS

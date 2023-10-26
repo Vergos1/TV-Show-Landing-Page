@@ -24,6 +24,13 @@
   justify-content: space-between;
 }
 
+// For screens wider than 451px
+@mixin mobile {
+  @media (min-width: 451px) {
+    @content;
+  }
+}
+
 // For screens wider than 600px
 @mixin tablet-sm {
   @media (min-width: 601px) {

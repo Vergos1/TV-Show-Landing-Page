@@ -6,11 +6,6 @@
     padding: 60px 0;
   }
   &__title {
-    font-family: $marcellus;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 70px;
     max-width: 532px;
   }
 
@@ -69,22 +64,22 @@
     background: url("../assets/picture/hero-section-picture.jpg") no-repeat center center;
     background-size: 200% auto;
     &__container {
-      padding: 120px 0 200px 0;
+      padding: 121px 0 204px 0;
     }
     &__title {
       font-size: 80px;
+    }
+    &__watch-button {
+      padding: 15px 30px;
+      img {
+        margin-right: 15px;
+      }
     }
   }
 }
 @include desktop {
   .hero {
     background: url("../assets/picture/hero-section-picture.jpg") no-repeat center right;
-    background-size: 85% 126%;
-    &__container {
-      padding: 120px 0 200px 0;
-    }
-    &__title {
-      font-size: 80px;
-    }
+    background-size: 90% 126%;
   }
 }

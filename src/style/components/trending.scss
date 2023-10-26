@@ -1,0 +1,32 @@
+.trending {
+  &__item-link > * {
+    @include border-radius(24px);
+  }
+
+  &__wrapper {
+    @include mb(68px);
+  }
+
+  &__link  {
+    margin-top: 55px;
+    padding: 15px 34px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    &:hover {
+      img {
+        box-shadow: 0px 0px 10px 5px #0A2A3B;
+      }
+    }
+  }
+}
+
+@include tablet-sm {
+  .trending {
+    &__link {
+      max-width: max-content;
+    }
+  }
+}
