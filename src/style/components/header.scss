@@ -1,4 +1,9 @@
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: $main-bg;
+  z-index: 9999;
   &__container {
     padding: 15px 0;
   }

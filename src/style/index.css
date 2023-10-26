@@ -646,6 +646,13 @@ h4 {
     all: revert; /* Отмена всех стилей Swiper */
   }
 }
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #000;
+  z-index: 9999;
+}
 .header__container {
   padding: 15px 0;
 }
@@ -709,6 +716,7 @@ h4 {
   background: url("../assets/picture/hero-section-mobile.jpg") no-repeat center;
   background-size: 320% 150%;
   border-bottom: 2px solid #2F2E2E;
+  margin-top: 79px;
 }
 .hero__container {
   padding: 60px 0;
@@ -797,6 +805,7 @@ h4 {
 }
 @media (min-width: 992px) {
   .hero {
+    margin-top: 100px;
     background: url("../assets/picture/hero-section-picture.jpg") no-repeat center right;
     background-size: 100% 126%;
   }
@@ -814,6 +823,9 @@ h4 {
   padding: 15px 34px;
   display: flex;
   justify-content: center;
+}
+.trending__item {
+  flex: 1 1;
 }
 .trending__item:hover img {
   box-shadow: 0px 0px 10px 5px #0A2A3B;
@@ -881,10 +893,15 @@ h4 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  flex: 1 1;
   gap: 20px;
 }
 .popular__item > *:hover, .popular__item > *:active, .popular__item > *:focus {
   cursor: grab;
+}
+.popular__item-name {
+  margin-top: 20px;
+  text-align: center;
 }
 
 @media (min-width: 451px) {

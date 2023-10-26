@@ -2,7 +2,7 @@
   background: url("../assets/picture/hero-section-mobile.jpg") no-repeat center;
   background-size: 320% 150%;
   border-bottom: 2px solid $border-section;
-
+margin-top: 79px;
   &__container {
     padding: 60px 0;
   }
@@ -41,6 +41,7 @@
     border-radius: 12px;
     background-color: black;
   }
+
   .gradient-border {
     display: inline-block;
     background: linear-gradient(317deg, #26FFF2 13.2%, #326CFF 71.54%);
@@ -100,6 +101,7 @@
 
 @include desktop {
   .hero {
+    margin-top: 100px;
     background: url("../assets/picture/hero-section-picture.jpg") no-repeat center right;
     background-size: 100% 126%;
   }
