@@ -1,0 +1,68 @@
+.register-banner {
+  &__wrapper {
+    max-width: 1224px;
+    margin: auto;
+    background: url("../assets/picture/register-banner.png") no-repeat center center;
+    @include border-radius(20px);
+    @include flex-v-center;
+    flex-direction: column;
+    padding: 35px 24px;
+    gap: 35px;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  &__register-button {
+    padding: 15px 18px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__item-right {
+    width: 50%;
+  }
+
+}
+
+@include desktop {
+  .register-banner {
+    &__wrapper {
+      background: url("../assets/picture/register-banner.png") no-repeat center center;
+      @include border-radius(20px);
+      @include flex-v-center;
+      flex-direction: row;
+      padding: 71px 57px;
+      gap: 3%;
+    }
+
+    &__item {
+      &-left {
+        flex-basis: 77%;
+      }
+
+      &-right {
+        flex: 1 1;
+      }
+    }
+
+    &__title {
+      max-width: 792px;
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 100%;
+      text-transform: capitalize;
+      text-align: initial;
+    }
+
+    &__register-button {
+      width: max-content;
+    }
+  }
+}

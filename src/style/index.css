@@ -840,5 +840,65 @@ h3 {
     min-height: 338px;
   }
 }
+.register-banner__wrapper {
+  max-width: 1224px;
+  margin: auto;
+  background: url("../assets/picture/register-banner.png") no-repeat center center;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 35px 24px;
+  gap: 35px;
+}
+.register-banner__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: capitalize;
+  text-align: center;
+}
+.register-banner__register-button {
+  padding: 15px 18px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.register-banner__item-right {
+  width: 50%;
+}
+
+@media (min-width: 992px) {
+  .register-banner__wrapper {
+    background: url("../assets/picture/register-banner.png") no-repeat center center;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 71px 57px;
+    gap: 3%;
+  }
+  .register-banner__item-left {
+    flex-basis: 77%;
+  }
+  .register-banner__item-right {
+    flex: 1 1;
+  }
+  .register-banner__title {
+    max-width: 792px;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: capitalize;
+    text-align: initial;
+  }
+  .register-banner__register-button {
+    width: max-content;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */
