@@ -225,9 +225,11 @@ html {
   -moz-box-sizing: border-box;
   transition: all 0.25s ease-in-out;
 }
+
 body {
   min-width: 320px;
 }
+
 body,
 html {
   background-color: $main-bg;

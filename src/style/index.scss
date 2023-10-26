@@ -35,18 +35,18 @@ h3 {
   padding: 70px 0;
 
   // Base styles for mobile devices
-  max-width: calc(100% - 40px);
+  max-width: calc(100% - 20px);
 
   @include tablet-sm {
     max-width: 95%; // For tablets starting from 601px
   }
 
   @include tablet {
-    max-width: 90%; // For tablets starting from 741px
+    max-width: 95%; // For tablets starting from 741px
   }
 
   @include desktop {
-    max-width: 85%; // For desktops starting from 992px
+    max-width: 90%; // For desktops starting from 992px
   }
 }
 
@@ -172,7 +172,9 @@ h3 {
     all: revert; /* Отмена всех стилей Swiper */
   }
 }
+.swiper-slide > * {
 
+}
 //note STYLE MAIN
 
 //note COMPONENTS
@@ -181,5 +183,6 @@ h3 {
 @import "./components/hero";
 @import "./components/trending";
 @import "./components/popular";
+@import "./components/release";
 
 //note COMPONENTS

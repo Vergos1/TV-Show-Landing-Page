@@ -19,12 +19,15 @@
       display: block;
     }
   }
+
   &__button {
     width: max-content;
+
     & > * {
       width: max-content;
     }
   }
+
   &__buttons {
     @include flex-v-center;
   }

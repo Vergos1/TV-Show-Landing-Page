@@ -2,9 +2,11 @@
   background: url("../assets/picture/hero-section-mobile.jpg") no-repeat center;
   background-size: 320% 150%;
   border-bottom: 2px solid $border-section;
+
   &__container {
     padding: 60px 0;
   }
+
   &__title {
     max-width: 532px;
   }
@@ -47,6 +49,7 @@
   &__bottom {
     margin-top: 35px;
     @include flex-v-center;
+
     & > * {
       @include mr(18px);
     }
@@ -54,32 +57,39 @@
 
   &__watch-button {
     padding: 15px 15px;
+
     img {
       margin-right: 10px;
     }
   }
 }
+
 @include tablet-sm {
   .hero {
-    background: url("../assets/picture/hero-section-picture.jpg") no-repeat center center;
-    background-size: 200% auto;
+    background: url("../assets/picture/hero-section-tablet.jpg") no-repeat center center;
+    background-size: 200% 150%;
+
     &__container {
       padding: 121px 0 204px 0;
     }
+
     &__title {
       font-size: 80px;
     }
+
     &__watch-button {
       padding: 15px 30px;
+
       img {
         margin-right: 15px;
       }
     }
   }
 }
+
 @include desktop {
   .hero {
     background: url("../assets/picture/hero-section-picture.jpg") no-repeat center right;
-    background-size: 90% 126%;
+    background-size: 100% 126%;
   }
 }

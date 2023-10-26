@@ -2,18 +2,26 @@
   &__wrapper {
     @include mb(68px);
   }
+
   &__items {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
   }
 
-  &__item {
+  &__card {
     @include flex-all-center;
     @include border-radius(20px);
     flex-direction: column;
     gap: 8px;
     padding: 30px;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      & > * {
+        transform: scale(1.2);
+      }
+    }
 
     &:nth-child(1) {
       background: linear-gradient(109deg, #FD093F 2.4%, #F383F1 100%);
@@ -47,12 +55,27 @@
       background: linear-gradient(109deg, #1FA2FF 2.4%, #1FA2FF 2.41%, #1F535C 97.46%);
     }
   }
-  &__item-title {
+
+  &__card-title {
     font-size: 24px;
     font-weight: 700;
     line-height: 20px;
   }
+
+  &__item {
+    @include flex-all-center;
+    flex-direction: column;
+    gap: 20px;
+    &>* {
+      &:hover,
+      &:active,
+      &:focus, {
+        cursor: grab;
+      }
+    }
+  }
 }
+
 @include mobile {
   .popular {
     &__items {
@@ -60,6 +83,7 @@
     }
   }
 }
+
 @include desktop {
   .popular {
     &__items {
@@ -67,10 +91,12 @@
       grid-template-columns: repeat(4, 1fr);
       gap: 27px;
     }
-    &__item {
+
+    &__card {
       padding: 45px;
     }
-    &__item-title {
+
+    &__card-title {
       font-size: 24px;
     }
   }
