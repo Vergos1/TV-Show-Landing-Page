@@ -25,7 +25,7 @@ Welcome to the TV Show Landing Page repository! This project is a sleek and inte
 
 ## Project Link
 
-- (https://github.com/yourusername/tv-show-landing-page](https://vergos1.github.io/TV-Show-Landing-Page/))
+- ((https://vergos1.github.io/TV-Show-Landing-Page/))
 
 ---
 
