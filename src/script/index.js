@@ -1,12 +1,23 @@
+import {initializeBurgerMenu} from "./burgerMenu.js";
+
+
+
 document.addEventListener('DOMContentLoaded', (event) => {
+  initializeBurgerMenu();
+  // init burger menu
+
+
   const trendingSlider = new Swiper('.trending__slider', {
-    slidesPerView: window.innerWidth <= 600 ? 2 : 4,
+    slidesPerView: window.innerWidth <= 600 ? "2.5" : 4,
     spaceBetween: 10,
     simulateTouch: window.innerWidth <= 741,
     touchRatio: 1,
   });
+  // init swiper lib
 });
 // swiper init
+
+
 
 let lastWidth = window.innerWidth;
 
@@ -22,4 +33,4 @@ window.onresize = function () {
     }
   }
 };
-// oversize auto reload
+// oversize auto reload page

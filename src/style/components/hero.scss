@@ -33,9 +33,20 @@
   }
 
   &__item-age {
-    border: 1.5px solid #26FFF2;
     @include border-radius(50px);
     padding: 6px 15px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    background-color: black;
+  }
+  .gradient-border {
+    display: inline-block;
+    background: linear-gradient(317deg, #26FFF2 13.2%, #326CFF 71.54%);
+    padding: 1.5px;
+    border-radius: 15px;
+    margin: 10px;
   }
 
   &__description {

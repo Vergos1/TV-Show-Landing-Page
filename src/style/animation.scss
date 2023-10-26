@@ -22,6 +22,46 @@
   }
 }
 
+@keyframes showModal {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes showModal {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+@keyframes closeModal {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(100%);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes closeModal {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate(-100%);
+  }
+}
 @-webkit-keyframes showSection {
 
   // animation section

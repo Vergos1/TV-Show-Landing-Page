@@ -6,7 +6,7 @@
     @include border-radius(20px);
     @include flex-v-center;
     flex-direction: column;
-    padding: 35px 24px;
+    padding: 10px 14px;
     gap: 35px;
   }
 
@@ -33,6 +33,9 @@
 
 @include desktop {
   .register-banner {
+    &__container {
+      padding: 70px 0 120px 0;
+    }
     &__wrapper {
       background: url("../assets/picture/register-banner.png") no-repeat center center;
       @include border-radius(20px);

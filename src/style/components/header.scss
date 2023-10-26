@@ -13,10 +13,31 @@
   }
 
   &__burger-menu {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+    top: 79px;
+    left: 0;
+    background: $main-bg;
+    padding: 20px 50px 30px;
+    width: 100%;
+    flex-direction: column;
+    gap: 50px;
 
     &.open {
-      display: block;
+      visibility: visible;
+      display: flex;
+      animation: 0.6s forwards showModal;
+    }
+
+    &.closed {
+      opacity: 0;
+      animation: 0.6s forwards closeModal;
+    }
+
+    &-button {
+      margin: auto;
     }
   }
 
@@ -38,6 +59,12 @@
     &__logo > * {
       width: 157px;
       height: 70px;
+    }
+
+    &.sticky-header {
+      background: $header-bg;
+      position: sticky;
+      top: 0;
     }
   }
 }

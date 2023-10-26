@@ -35,7 +35,7 @@ h3 {
   padding: 70px 0;
 
   // Base styles for mobile devices
-  max-width: calc(100% - 20px);
+  max-width: calc(100% - 30px);
 
   @include tablet-sm {
     max-width: 95%; // For tablets starting from 601px
@@ -114,12 +114,33 @@ h3 {
   @include flex;
   align-items: start;
   flex-direction: column;
+
+  & > ul {
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    gap: 25px;
+  }
+  & > ul li a {
+    color: white;
+    flex: 1 1;
+    display: flex;
+    background: $footer-bg;
+    padding: 10px;
+    &:hover {
+      cursor: pointer;
+      background: $main-bg;
+      transform: scale(1.2);
+    }
+  }
 }
 
 .list {
   li {
     @include mb(20px)
   }
+
   a {
     color: $text-grey;
     font-size: 18px;
@@ -141,9 +162,31 @@ h3 {
   font-weight: 800;
   line-height: 20px;
   transition: all 0.3s;
+  overflow: hidden;
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(137deg, #26FFF2 13.2%, #326CFF 71.54%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: inherit; /* унаследовать закругление углов от кнопки */
+  }
   &:hover {
-    background-size: 200% 200%;
+    transform: scale(1.05);
+    &::after {
+      opacity: 1;
+    }
+
+  }
+  &>* {
+    @include flex-v-center;
+    position: relative;
+    z-index: 1;
   }
 }
 
@@ -155,6 +198,9 @@ h3 {
   line-height: 20px;
   padding: 15px 30px;
   @include border-radius(50px);
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 .section-title {
