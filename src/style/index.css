@@ -718,7 +718,7 @@ h4 {
   }
 }
 .hero {
-  background: url("../assets/picture/hero-section-mobile.jpg") no-repeat center;
+  background: url("../assets/picture/hero-section-mobile.webp") no-repeat center;
   background-size: 320% 150%;
   border-bottom: 2px solid #2F2E2E;
   margin-top: 79px;
@@ -792,7 +792,7 @@ h4 {
 
 @media (min-width: 601px) {
   .hero {
-    background: url("../assets/picture/hero-section-tablet.jpg") no-repeat center center;
+    background: url("../assets/picture/hero-section-tablet.webp") no-repeat center center;
     background-size: 200% 150%;
   }
   .hero__container {
@@ -811,7 +811,7 @@ h4 {
 @media (min-width: 992px) {
   .hero {
     margin-top: 100px;
-    background: url("../assets/picture/hero-section-picture.jpg") no-repeat center right;
+    background: url("../assets/picture/hero-section-picture.webp") no-repeat center right;
     background-size: 100% 126%;
   }
 }
@@ -1003,7 +1003,7 @@ h4 {
 .register-banner__wrapper {
   max-width: 1224px;
   margin: auto;
-  background: url("../assets/picture/register-banner.png") no-repeat center center;
+  background: url("../assets/picture/register-banner.webp") no-repeat center center;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
@@ -1035,7 +1035,7 @@ h4 {
     padding: 70px 0 120px 0;
   }
   .register-banner__wrapper {
-    background: url("../assets/picture/register-banner.png") no-repeat center center;
+    background: url("../assets/picture/register-banner.webp") no-repeat center center;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
