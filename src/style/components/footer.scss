@@ -1,0 +1,62 @@
+.footer {
+  background: $footer-bg;
+  &__logo  {
+    @include flex-all-center;
+    &> * {
+      width: 109px;
+      height: 49px;
+    }
+
+  }
+
+  &__list-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-top: 50px;
+  }
+
+  &__list-item {
+    &:nth-child(1), &:nth-child(3) {
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        background: $border-section;
+        right: -20px;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .footer {
+    &__wrapper {
+      @include flex-all-center;
+      gap: 84px;
+    }
+
+    &__logo > * {
+      width: 157px;
+      height: 70px;
+    }
+
+    &__list-items {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 50px;
+      margin-top: 50px;
+    }
+    &__list-item {
+      &:nth-child(1), &:nth-child(3) {
+        &:after {
+      display: none;
+        }
+      }
+    }
+  }
+}

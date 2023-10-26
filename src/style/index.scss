@@ -116,6 +116,22 @@ h3 {
   flex-direction: column;
 }
 
+.list {
+  li {
+    @include mb(20px)
+  }
+  a {
+    color: $text-grey;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+
+    &:hover {
+      color: $text-default;
+    }
+  }
+}
+
 .button-blue {
   background: linear-gradient(317deg, #26FFF2 13.2%, #326CFF 71.54%);
   filter: drop-shadow(0px 4px 50px rgba(50, 108, 255, 0.50));
@@ -172,9 +188,11 @@ h3 {
     all: revert; /* Отмена всех стилей Swiper */
   }
 }
+
 .swiper-slide > * {
 
 }
+
 //note STYLE MAIN
 
 //note COMPONENTS
@@ -185,6 +203,6 @@ h3 {
 @import "./components/popular";
 @import "./components/release";
 @import "./components/register-banner";
-//@import "./components/footer";
+@import "./components/footer";
 
 //note COMPONENTS
