@@ -7,8 +7,11 @@ Welcome to the TV Show Landing Page repository! This project is a sleek and inte
 - **HTML5**: Provides the basic structure of the site.
 - **CSS3/SCSS**: Enhances the visual presentation and adds animations.
 - **JavaScript**: Adds interactivity and dynamic content.
+- **Mobile first**: An approach to web development where website design is primarily optimized for mobile devices.
 - **Responsive Design**: Ensures a seamless experience across various devices.
+- **Swiper js**: Swiper js library.
 - **Git/GitHub**: Utilized for version control and source code management.
+
 
 ## Features
 
